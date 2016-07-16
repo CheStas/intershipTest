@@ -1,0 +1,22 @@
+@function pxMedia($px, $media) {
+    $k: 0;
+    @if $media == phonePortrait {
+        $k: .0412500;
+    } @else if $media == phoneLandscape {
+        $k: .04103;
+    } @else if $media == tabletPortrait {
+        $k: .045106;
+    } @else if $media == tabletLandscape {
+        $k: .04182826;
+    } @else if $media == desktop {
+        $k: .03687513;
+    } @else if $media == desktopWide {
+        $k: .03394543;
+    } @else if $media == desktopHD {
+        $k: .0290626;
+    } @else if $media == desktopMega {
+        $k: .0241797;
+    }
+
+    @return $px * $k * 1vw;
+}

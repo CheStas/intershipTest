@@ -1,0 +1,31 @@
+@import '../mobile';
+
+& {
+    background: $color2 url('../images/dropbox.jpg') 370px center no-repeat;
+    background-size: cover;
+
+    h1 {
+        width: 300px;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    h2 {
+        width: 300px;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .button {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .buy {
+        margin-right: 0;
+        margin-left: 50px;
+        text-align: left;
+    }
+}

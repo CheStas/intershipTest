@@ -1,0 +1,83 @@
+& {
+    padding: px(320) 0 px(290);
+    background: $color2;
+    color: $color1;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+
+    h2 {
+        margin: 0 2% px(110);
+        font-size: px(60);
+        font-weight: 100;
+    }
+
+    input {
+        width: px(460);
+        margin: 0 px(10) px(20);
+        padding: px(40) 0 px(40) px(80);
+        border: 1px solid $color4;
+        border-radius: 3px;
+        outline: 0;
+        background: $color1 url('../images/invision.png')  no-repeat;
+        background-position: px(16) px(-190);
+        background-size: px(82);
+        color: $color3;
+        font-size: px(36);
+        box-sizing: border-box;
+
+        &::-webkit-input-placeholder {
+            color: $color3;
+        }
+
+        &:hover {
+
+            &::-webkit-input-placeholder {
+                transition: color $transitionDuration;
+                color: $color4;
+            }
+        }
+    }
+
+    [type="email"] {
+        background-position: px(16) px(-14);
+    }
+
+    [type="password"] {
+        background-position: px(8) px(-102);
+    }
+
+    button {
+        margin: 0 px(10);
+        padding: px(44);
+        transition: background $transitionDuration;
+        border: 0;
+        border-radius: 3px;
+        outline: 0;
+        background: $color5;
+        color: $color1;
+        font-size: px(30);
+        font-weight: 900;
+        text-transform: uppercase;
+        box-sizing: border-box;
+
+        &:hover {
+            background: $color7;
+            cursor: pointer;
+        }
+    }
+
+    p {
+        margin-top: px(62);
+        color: $color6;
+        font-size: px(24);
+
+        a {
+            transition: color $transitionDuration2;
+            color: $color6;
+
+            &:hover {
+                color: $color1;
+            }
+        }
+    }
+}

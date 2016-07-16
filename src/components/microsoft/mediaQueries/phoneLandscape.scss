@@ -1,0 +1,22 @@
+@import '../mobile';
+
+& {
+    .button-enter {
+        display: block;
+        transition: color $transitionDuration;
+        background: $color1;
+        color: $color5;
+
+        &:hover {
+            color: $color3;
+        }
+    }
+
+    nav {
+        width: 300px;
+
+        .menu-open {
+            display: none;
+        }
+    }
+}

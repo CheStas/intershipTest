@@ -1,0 +1,22 @@
+@import '../desktop';
+
+& {
+    padding-left: 20%;
+    background-position: 700px center;
+    background-size: contain;
+
+    h1 {
+        width: 450px;
+        font-size: 47px;
+    }
+
+    h2 {
+        width: 450px;
+        font-size: 21px;
+    }
+
+    .button {
+        padding: 15px 0;
+        font-size: 21px;
+    }
+}

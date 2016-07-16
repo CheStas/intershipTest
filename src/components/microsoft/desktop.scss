@@ -1,0 +1,211 @@
+& {
+    position: relative;
+    min-width: 300px;
+    font-family: 'PT Sans', 'Arial', sans-serif;
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        padding: 0 5%;
+    }
+
+    .logo {
+        display: block;
+        flex: 1;
+        margin: 13px 0 0;
+
+        img {
+            width: 108px;
+            height: 23px;
+        }
+    }
+
+    .button {
+        display: block;
+        width: 44px;
+        height: 48px;
+        padding: 13px 12px;
+        transition: background-color $transitionDuration;
+        border: 0;
+        outline: none;
+        background: $color1 url('../images/search.svg') center no-repeat;
+        background-size: 21px;
+
+        &:hover {
+            background-color: $color2;
+            cursor: pointer;
+
+            .amount {
+                color: $color3;
+            }
+        }
+    }
+
+    .button-search {
+        display: none;
+    }
+
+    .button-basket {
+        padding: 13px 10px;
+        background: $color1 url('../images/trolley.svg') center no-repeat;
+        background-size: 20px;
+    }
+
+    .amount {
+        margin-left: 25px;
+        color: $color5;
+    }
+
+    .button-hamburger {
+        display: none;
+    }
+
+    .button-enter {
+        display: block;
+        transition: color $transitionDuration;
+        background: $color1;
+        color: $color5;
+
+        &:hover {
+            color: $color3;
+        }
+    }
+
+    .search-form {
+        display: flex;
+        position: absolute;
+        top: 9px;
+        right: 14%;
+        flex-flow: row nowrap;
+        justify-content: center;
+        border: 1px solid $color9;
+        background: $color2;
+
+        [type="text"] {
+            height: 30px;
+            padding: 0 10px;
+            border: 0;
+            outline: none;
+            font-size: 15px;
+
+            &::-webkit-input-placeholder {
+                color: $color4;
+            }
+        }
+
+        .button {
+            width: 30px;
+            height: 30px;
+            background: $color1 url('../images/search.svg') center no-repeat;
+            background-size: 18px;
+        }
+    }
+
+    .form-active {
+        display: flex;
+    }
+
+    nav {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 19%;
+        width: 354px;
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            li {
+                width: 118px;
+                text-align: center;
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                padding: 16px 10px;
+                transition: background-color $transitionDuration;
+                color: $color6;
+                font-size: 16px;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: $color7;
+                }
+            }
+
+            .menu-open {
+                display: none;
+            }
+        }
+
+        .submenu-parent {
+            position: relative;
+
+            &::after {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 18px;
+                width: 5px;
+                height: 5px;
+                color: $color5;
+                font-size: 20px;
+                content: '˅';
+            }
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 48px;
+            width: 238px;
+            border-bottom: 1px solid $color8;
+
+            li {
+                width: 100%;
+                text-align: left;
+            }
+
+            a {
+                transition: background-color $transitionDuration;
+                background-color: $color7;
+
+                &:hover {
+                    background-color: $color10;
+                }
+            }
+
+            .submenu {
+                top: 0;
+                left: 237px;
+
+                a {
+                    transition: background-color $transitionDuration, text-decoration $transitionDuration;
+                    background-color: $color12;
+
+                    &:hover {
+                        background-color: $color13;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .submenu-parent {
+                &::after {
+                    right: 12px;
+                    transform: rotate(-90deg);
+                }
+
+                &:hover {
+                    .submenu {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

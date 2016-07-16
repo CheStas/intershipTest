@@ -1,0 +1,59 @@
+& {
+    padding: 50px 5%;
+    border-top: 1px solid $color3;
+    background: $color2;
+    color: $color4;
+    font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana ,"lucida sans unicode", tahoma, sans-serif;
+
+    h1 {
+        margin: 20px auto;
+        font-size: 26px;
+        font-weight: 100;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    h2 {
+        margin: 0 auto;
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .button {
+        display: block;
+        width: 225px;
+        height: 50px;
+        margin: 60px auto 0;
+        padding: 17px 40px;
+        transition: background $transitionDuration;
+        border-radius: 6px;
+        background: $color5;
+        color: $color1;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            background: $color6;
+        }
+    }
+
+    .buy {
+        display: block;
+        margin: 15px auto;
+        text-align: center;
+
+        a {
+            transition: color $transitionDuration;
+            border-bottom: 1px solid $color5;
+            color: $color5;
+            text-decoration: none;
+
+            &:hover {
+                color: $color6;
+            }
+        }
+    }
+}

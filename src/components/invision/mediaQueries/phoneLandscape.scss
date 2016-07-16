@@ -1,0 +1,16 @@
+@import '../mobile';
+
+& {
+    input {
+        background-position: px(14) px(-136);
+        background-size: px(64);
+    }
+
+    [type="email"] {
+        background-position: px(10) px(-2);
+    }
+
+    [type="password"] {
+        background-position: px(10) px(-58);
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "CheStas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "scss-lint  --config lint.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CheStas/Gulp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CheStas/Gulp/issues"
+  },
+  "homepage": "https://github.com/CheStas/Gulp#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-cache": "^0.4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.5",
+    "gulp-server-livereload": "^1.5.4",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}

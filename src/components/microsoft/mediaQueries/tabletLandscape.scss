@@ -1,0 +1,43 @@
+@import '../desktop';
+
+& {
+
+    .button-search {
+        display: block;
+    }
+
+    .search-form {
+        display: none;
+        position: relative;
+        top: 0;
+        right: 0;
+        flex: 1 100%;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 80%;
+        margin: 0 10%;
+        padding: 20px 0;
+        border: 0;
+        background: $color2;
+
+        [type="text"] {
+            width: 50%;
+            height: 30px;
+            padding-left: 5px;
+            border: 0;
+            outline: none;
+            font-size: 15px;
+        }
+
+        ::-webkit-input-placeholder {
+            color: $color4;
+        }
+
+        .button {
+            width: 30px;
+            height: 30px;
+            background: $color3 url('../images/search-white.png') center no-repeat;
+            background-size: 34px;
+        }
+    }
+}

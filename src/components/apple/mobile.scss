@@ -1,0 +1,121 @@
+& {
+    padding: 32px 16px;
+    background: $color2;
+    font-family: 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+    nav {
+        li {
+            margin-bottom: 15px;
+            border-bottom: 1px solid $color5;
+        }
+
+        h2 {
+            padding-bottom: 15px;
+            color: $color4;
+            font-size: 13px;
+            font-weight: 300;
+
+            &::after {
+                margin-right: 8px;
+                float: right;
+                transition: transform $transitionDuration ease;
+                font-weight: normal;
+                content: '+';
+            }
+
+            &:hover {
+                color: $color6;
+                cursor: pointer;
+            }
+        }
+
+        .rotate::after {
+            transform: rotate(45deg);
+        }
+
+        .submenu {
+            display: none;
+            padding: 0 0 14px;
+
+            li {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            a {
+                padding: 0 14px;
+                color: $color3;
+                font-size: 11px;
+                line-height: 30px;
+                text-decoration: none;
+
+                &:hover {
+                    color: $color4;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .footer-shop {
+        color: $color7;
+        font-size: 11px;
+
+        a {
+            transition: color $transitionDuration, text-decoration $tabletPortrait;
+            color: $color8;
+            text-decoration: none;
+
+            &:hover {
+                color: $color4;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .footer-locale {
+        display: block;
+        width: 90px;
+        margin: 20px 0;
+        padding: 0 0 0 20px;
+        background: url('../images/apple-country.png') left center no-repeat;
+        background-size: 16px 16px;
+        color: $color3;
+        font-size: 11px;
+        line-height: 16px;
+        text-decoration: none;
+
+        &:hover {
+            color: $color4;
+            text-decoration: underline;
+        }
+    }
+
+    .legal-copyright {
+        color: $color7;
+        font-size: 11px;
+    }
+
+    .legal-links {
+        margin-top: 10px;
+
+        a {
+            margin-right: 20px;
+            padding-right: 12px;
+            border-right: 1px solid $color9;
+            color: $color3;
+            font-size: 11px;
+            text-decoration: none;
+
+            &:hover {
+                color: $color4;
+                text-decoration: underline;
+            }
+
+            &:last-child {
+                border: 0;
+            }
+        }
+    }
+}
