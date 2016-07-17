@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CheStas/Gulp.git"
+    "url": "git+https://github.com/intershipTest/Gulp.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CheStas/Gulp/issues"
+    "url": "https://github.com/CheStas/intershipTest/issues"
   },
-  "homepage": "https://github.com/CheStas/Gulp#readme",
+  "homepage": "https://github.com/CheStas/intershipTest#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
