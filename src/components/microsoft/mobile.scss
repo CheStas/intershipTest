@@ -44,7 +44,7 @@
     .button-basket {
         padding: 13px 10px;
         background: $color1 url('../images/trolley.svg') center no-repeat;
-        background-size: 23px;
+        background-size: 19px;
     }
 
     .amount {
@@ -138,13 +138,13 @@
             &::after {
                 display: block;
                 position: absolute;
-                top: 22px;
-                right: 26px;
+                top: 14px;
+                right: 25px;
                 width: 5px;
                 height: 5px;
-                color: $color5;
-                font-size: 20px;
-                content: '˅';
+                color: $color9;
+                font-size: 16px;
+                content: '⌄';
             }
         }
 
